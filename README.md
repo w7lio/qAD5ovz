@@ -1,7 +1,7 @@
 Đéo push readme nên nó về mẹ bản cũ rồi
 > [!NOTE]
-> https://w7lio.github.io/qAD5ovz/A_world_that_is_not_recognized_by_anyone/index.html 
-> https://w7lio.github.io/qAD5ovz/Sakurako_Cuckolding_Tale/index.html 
+> https://w7lio.github.io/qAD5ovz/A_world_that_is_not_recognized_by_anyone/index.html   
+> https://w7lio.github.io/qAD5ovz/Sakurako_Cuckolding_Tale/index.html   
 > https://w7lio.github.io/qAD5ovz/TheNpcSech2/index.html  
 > https://w7lio.github.io/qAD5ovz/Sex_a_maid_and_a_Desert_Island/index.html
 > https://w7lio.github.io/qAD5ovz/index.html
