@@ -21,6 +21,9 @@ wget --header="Cookie: accountToken=VALUE" \
 sudo apt update
 sudo apt install p7zip-full
 ```
+> [!IMPORTANT]
+> `grep -rInF --binary-files=without-match '=====' .`   
+> Prompt:  
 
 > [!TIP] 
 > Preview:
@@ -30,8 +33,8 @@ sudo apt install p7zip-full
 
 ### 3.Push
 > [!WARNING]
-> find -type f -size +100M -printf '%s bytes\t%p\n' | sort -nr  
-> git rm --cached "PATH"  
+> ```find -type f -size +100M -printf '%s bytes\t%p\n' | sort -nr```   
+> ```git rm --cached "PATH"  ```
 
 > **Push Folder**
 ```
