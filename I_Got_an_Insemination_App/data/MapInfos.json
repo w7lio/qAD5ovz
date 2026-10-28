@@ -1,0 +1,191 @@
+[
+    null,
+    {
+        "id": 1,
+        "expanded": true,
+        "name": "My Room",
+        "order": 2,
+        "parentId": 27,
+        "scrollX": 800.4,
+        "scrollY": 454.79999999999995,
+        "_original": {
+            "name": "自室"
+        }
+    },
+    {
+        "id": 2,
+        "expanded": true,
+        "name": "Gallery",
+        "order": 5,
+        "parentId": 9,
+        "scrollX": 800.4,
+        "scrollY": 454.79999999999995,
+        "_original": {
+            "name": "ギャラリー"
+        }
+    },
+    {
+        "id": 3,
+        "expanded": true,
+        "name": "Street 1",
+        "order": 10,
+        "parentId": 0,
+        "scrollX": 800.4,
+        "scrollY": 454.79999999999995,
+        "_original": {
+            "name": "街路１"
+        }
+    },
+    {
+        "id": 4,
+        "expanded": true,
+        "name": "Liquor Store",
+        "order": 12,
+        "parentId": 3,
+        "scrollX": 800.4,
+        "scrollY": 454.79999999999995,
+        "_original": {
+            "name": "酒屋"
+        }
+    },
+    {
+        "id": 5,
+        "expanded": true,
+        "name": "Gymnasium",
+        "order": 8,
+        "parentId": 28,
+        "scrollX": 800.4,
+        "scrollY": 454.79999999999995,
+        "_original": {
+            "name": "体育館"
+        }
+    },
+    null,
+    {
+        "id": 7,
+        "expanded": true,
+        "name": "Street 2 - Police Officer",
+        "order": 13,
+        "parentId": 3,
+        "scrollX": 800.4,
+        "scrollY": 454.79999999999995,
+        "_original": {
+            "name": "街路２ 警官"
+        }
+    },
+    {
+        "id": 8,
+        "expanded": true,
+        "name": "Park - JC",
+        "order": 14,
+        "parentId": 3,
+        "scrollX": 800.4,
+        "scrollY": 454.79999999999995,
+        "_original": {
+            "name": "公園　JC"
+        }
+    },
+    {
+        "id": 9,
+        "expanded": true,
+        "name": "Ending",
+        "order": 4,
+        "parentId": 27,
+        "scrollX": 800.4,
+        "scrollY": 454.79999999999995,
+        "_original": {
+            "name": "エンディング"
+        }
+    },
+    null,
+    {
+        "id": 11,
+        "expanded": true,
+        "name": "Back Alley",
+        "order": 11,
+        "parentId": 3,
+        "scrollX": 800.4,
+        "scrollY": 454.79999999999995,
+        "_original": {
+            "name": "路地裏 "
+        }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+        "id": 27,
+        "expanded": true,
+        "name": "House Hallway",
+        "order": 1,
+        "parentId": 0,
+        "scrollX": 800.4,
+        "scrollY": 454.79999999999995,
+        "_original": {
+            "name": "家廊下"
+        }
+    },
+    {
+        "id": 28,
+        "expanded": true,
+        "name": "School Entrance",
+        "order": 6,
+        "parentId": 0,
+        "scrollX": 800.4,
+        "scrollY": 454.79999999999995,
+        "_original": {
+            "name": "学校玄関"
+        }
+    },
+    {
+        "id": 29,
+        "expanded": true,
+        "name": "Staff Room",
+        "order": 9,
+        "parentId": 28,
+        "scrollX": 800.4,
+        "scrollY": 454.79999999999995,
+        "_original": {
+            "name": "職員室"
+        }
+    },
+    null,
+    null,
+    {
+        "id": 32,
+        "expanded": true,
+        "name": "Library",
+        "order": 7,
+        "parentId": 28,
+        "scrollX": 800.4,
+        "scrollY": 454.79999999999995,
+        "_original": {
+            "name": "図書室"
+        }
+    },
+    null,
+    {
+        "id": 34,
+        "expanded": true,
+        "name": "Sister's Room",
+        "order": 3,
+        "parentId": 27,
+        "scrollX": 800.4,
+        "scrollY": 454.79999999999995,
+        "_original": {
+            "name": "姉の部屋"
+        }
+    }
+]
