@@ -21,6 +21,8 @@ wget --header="Cookie: accountToken=VALUE" \
 ```
 sudo apt update
 sudo apt install p7zip-full
+
+7z x FILE -o"NewFolder"
 ```
 > [!IMPORTANT]
 > `grep -rInF --binary-files=without-match '=====' .`   
