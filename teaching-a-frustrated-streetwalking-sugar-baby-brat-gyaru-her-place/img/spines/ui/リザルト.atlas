@@ -1,0 +1,160 @@
+
+リザルト.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+r0
+  rotate: false
+  xy: 2, 1146
+  size: 1600, 900
+  orig: 1600, 900
+  offset: 0, 0
+  index: -1
+r1
+  rotate: false
+  xy: 1604, 443
+  size: 268, 46
+  orig: 1600, 900
+  offset: 106, 714
+  index: -1
+r10
+  rotate: false
+  xy: 1282, 197
+  size: 627, 45
+  orig: 1600, 900
+  offset: 808, 452
+  index: -1
+r10b
+  rotate: false
+  xy: 1919, 480
+  size: 40, 9
+  orig: 1600, 900
+  offset: 1348, 471
+  index: -1
+r11
+  rotate: false
+  xy: 1278, 151
+  size: 631, 44
+  orig: 1600, 900
+  offset: 804, 389
+  index: -1
+r12
+  rotate: false
+  xy: 1604, 491
+  size: 442, 221
+  orig: 1600, 900
+  offset: 908, 135
+  index: -1
+r13
+  rotate: true
+  xy: 1910, 1096
+  size: 950, 47
+  orig: 1600, 900
+  offset: 283, 75
+  index: -1
+r14
+  rotate: false
+  xy: 2, 95
+  size: 510, 54
+  orig: 1600, 900
+  offset: 1090, 830
+  index: -1
+r2
+  rotate: true
+  xy: 1959, 777
+  size: 638, 45
+  orig: 1600, 900
+  offset: 170, 639
+  index: -1
+r3
+  rotate: false
+  xy: 2, 151
+  size: 638, 44
+  orig: 1600, 900
+  offset: 170, 576
+  index: -1
+r4
+  rotate: true
+  xy: 2006, 780
+  size: 635, 39
+  orig: 1600, 900
+  offset: 170, 518
+  index: -1
+r5
+  rotate: false
+  xy: 2, 49
+  size: 585, 44
+  orig: 1600, 900
+  offset: 220, 452
+  index: -1
+r6
+  rotate: false
+  xy: 642, 151
+  size: 634, 44
+  orig: 1600, 900
+  offset: 170, 389
+  index: -1
+r7
+  rotate: false
+  xy: 2, 197
+  size: 638, 45
+  orig: 1600, 900
+  offset: 170, 324
+  index: -1
+r7b
+  rotate: true
+  xy: 1874, 289
+  size: 200, 43
+  orig: 1600, 900
+  offset: 538, 325
+  index: -1
+r8
+  rotate: false
+  xy: 642, 197
+  size: 638, 45
+  orig: 1600, 900
+  offset: 170, 236
+  index: -1
+r9
+  rotate: true
+  xy: 1959, 1417
+  size: 629, 62
+  orig: 1600, 900
+  offset: 806, 518
+  index: -1
+負債1
+  rotate: false
+  xy: 2, 244
+  size: 1600, 900
+  orig: 1600, 900
+  offset: 0, 0
+  index: -1
+負債2
+  rotate: true
+  xy: 1814, 714
+  size: 1332, 46
+  orig: 1600, 900
+  offset: 142, 519
+  index: -1
+負債3
+  rotate: true
+  xy: 1862, 855
+  size: 1191, 46
+  orig: 1600, 900
+  offset: 212, 461
+  index: -1
+負債4
+  rotate: true
+  xy: 1604, 714
+  size: 1332, 103
+  orig: 1600, 900
+  offset: 142, 345
+  index: -1
+負債5
+  rotate: true
+  xy: 1709, 826
+  size: 1220, 103
+  orig: 1600, 900
+  offset: 212, 171
+  index: -1

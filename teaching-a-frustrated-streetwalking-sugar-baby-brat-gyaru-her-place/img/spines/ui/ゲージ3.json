@@ -1,0 +1,1 @@
+{"skeleton":{"hash":"/DjPAfgksmupMPYUOQ1//WnQVAw","spine":"3.8.99","images":"./images/","audio":""},"bones":[{"name":"root"}],"slots":[{"name":"ゲージ3","bone":"root","attachment":"ゲージ3"}],"skins":[{"name":"default","attachments":{"ゲージ3":{"ゲージ3":{"x":174.5,"y":-2.5,"width":349,"height":5}}}}],"animations":{"000":{}}}

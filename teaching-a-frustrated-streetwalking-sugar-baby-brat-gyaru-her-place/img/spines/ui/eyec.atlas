@@ -1,0 +1,104 @@
+
+eyec.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01
+  rotate: false
+  xy: 2717, 2337
+  size: 201, 201
+  orig: 1600, 900
+  offset: 0, 699
+  index: -1
+02
+  rotate: false
+  xy: 1911, 2137
+  size: 401, 401
+  orig: 1600, 900
+  offset: 0, 499
+  index: -1
+03
+  rotate: false
+  xy: 705, 1937
+  size: 601, 601
+  orig: 1600, 900
+  offset: 0, 299
+  index: -1
+04
+  rotate: false
+  xy: 3206, 3213
+  size: 801, 801
+  orig: 1600, 900
+  offset: 0, 99
+  index: -1
+05
+  rotate: false
+  xy: 2010, 2540
+  size: 1001, 900
+  orig: 1600, 900
+  offset: 0, 0
+  index: -1
+07
+  rotate: false
+  xy: 2, 2540
+  size: 1002, 900
+  orig: 1600, 900
+  offset: 199, 0
+  index: -1
+08
+  rotate: false
+  xy: 1006, 2540
+  size: 1002, 900
+  orig: 1600, 900
+  offset: 399, 0
+  index: -1
+09
+  rotate: false
+  xy: 3013, 2311
+  size: 1001, 900
+  orig: 1600, 900
+  offset: 599, 0
+  index: -1
+10
+  rotate: true
+  xy: 2, 1737
+  size: 801, 701
+  orig: 1600, 900
+  offset: 799, 0
+  index: -1
+11
+  rotate: false
+  xy: 1308, 2037
+  size: 601, 501
+  orig: 1600, 900
+  offset: 999, 0
+  index: -1
+12
+  rotate: false
+  xy: 2314, 2237
+  size: 401, 301
+  orig: 1600, 900
+  offset: 1199, 0
+  index: -1
+13
+  rotate: true
+  xy: 3013, 3239
+  size: 201, 101
+  orig: 1600, 900
+  offset: 1399, 0
+  index: -1
+14
+  rotate: false
+  xy: 2, 3442
+  size: 1600, 572
+  orig: 1600, 900
+  offset: 0, 164
+  index: -1
+15
+  rotate: false
+  xy: 1604, 3442
+  size: 1600, 572
+  orig: 1600, 900
+  offset: 0, 164
+  index: -1

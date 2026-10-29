@@ -1,0 +1,90 @@
+
+SL.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SLカーソル1
+  rotate: true
+  xy: 1604, 1225
+  size: 441, 62
+  orig: 1600, 900
+  offset: 578, 634
+  index: -1
+SLカーソル2
+  rotate: true
+  xy: 1604, 1225
+  size: 441, 62
+  orig: 1600, 900
+  offset: 578, 572
+  index: -1
+SLカーソル3
+  rotate: true
+  xy: 1604, 1225
+  size: 441, 62
+  orig: 1600, 900
+  offset: 578, 510
+  index: -1
+SLカーソル4
+  rotate: true
+  xy: 1604, 1225
+  size: 441, 62
+  orig: 1600, 900
+  offset: 578, 448
+  index: -1
+SLカーソル5
+  rotate: true
+  xy: 1604, 1225
+  size: 441, 62
+  orig: 1600, 900
+  offset: 578, 386
+  index: -1
+SLカーソル6
+  rotate: true
+  xy: 1604, 1225
+  size: 441, 62
+  orig: 1600, 900
+  offset: 578, 324
+  index: -1
+SLカーソル7
+  rotate: true
+  xy: 1604, 1225
+  size: 441, 62
+  orig: 1600, 900
+  offset: 578, 262
+  index: -1
+SLカーソル8
+  rotate: true
+  xy: 1604, 1225
+  size: 441, 62
+  orig: 1600, 900
+  offset: 578, 200
+  index: -1
+SL決定
+  rotate: true
+  xy: 1604, 1068
+  size: 155, 59
+  orig: 1600, 900
+  offset: 730, 142
+  index: -1
+SL背景
+  rotate: false
+  xy: 2, 766
+  size: 1600, 900
+  orig: 1600, 900
+  offset: 0, 0
+  index: -1
+セーブ画面
+  rotate: true
+  xy: 729, 200
+  size: 564, 725
+  orig: 1600, 900
+  offset: 515, 86
+  index: -1
+ロード画面
+  rotate: true
+  xy: 2, 200
+  size: 564, 725
+  orig: 1600, 900
+  offset: 515, 86
+  index: -1

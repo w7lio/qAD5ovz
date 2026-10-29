@@ -1,0 +1,277 @@
+
+cg2.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+02母乳
+  rotate: false
+  xy: 2382, 3957
+  size: 1573, 112
+  orig: 3000, 1800
+  offset: 706, 0
+  index: -1
+03口1
+  rotate: true
+  xy: 3957, 3922
+  size: 147, 112
+  orig: 3000, 1800
+  offset: 1390, 1079
+  index: -1
+03口2
+  rotate: false
+  xy: 2, 4042
+  size: 83, 27
+  orig: 3000, 1800
+  offset: 1426, 1127
+  index: -1
+03口3
+  rotate: false
+  xy: 188, 4002
+  size: 160, 67
+  orig: 3000, 1800
+  offset: 1396, 1121
+  index: -1
+03口4
+  rotate: false
+  xy: 785, 3984
+  size: 170, 85
+  orig: 3000, 1800
+  offset: 1390, 1107
+  index: -1
+03口5
+  rotate: false
+  xy: 87, 4039
+  size: 35, 30
+  orig: 3000, 1800
+  offset: 1429, 1118
+  index: -1
+03口6
+  rotate: true
+  xy: 124, 4017
+  size: 52, 62
+  orig: 3000, 1800
+  offset: 1424, 1103
+  index: -1
+03口7
+  rotate: false
+  xy: 512, 3986
+  size: 96, 83
+  orig: 3000, 1800
+  offset: 1417, 1094
+  index: -1
+03口8
+  rotate: false
+  xy: 610, 3985
+  size: 173, 84
+  orig: 3000, 1800
+  offset: 1383, 1099
+  index: -1
+03口9
+  rotate: false
+  xy: 350, 3997
+  size: 160, 72
+  orig: 3000, 1800
+  offset: 1396, 1121
+  index: -1
+04目1
+  rotate: true
+  xy: 3652, 3328
+  size: 627, 296
+  orig: 3000, 1800
+  offset: 1113, 1260
+  index: -1
+04目1ハート
+  rotate: false
+  xy: 1680, 3961
+  size: 342, 108
+  orig: 3000, 1800
+  offset: 1261, 1302
+  index: -1
+04目1涙
+  rotate: false
+  xy: 2617, 3813
+  size: 488, 142
+  orig: 3000, 1800
+  offset: 1191, 1251
+  index: -1
+04目2
+  rotate: false
+  xy: 1813, 3559
+  size: 640, 257
+  orig: 3000, 1800
+  offset: 1099, 1269
+  index: -1
+04目2ハート
+  rotate: false
+  xy: 1326, 3967
+  size: 352, 102
+  orig: 3000, 1800
+  offset: 1255, 1299
+  index: -1
+04目2涙
+  rotate: false
+  xy: 3107, 3813
+  size: 495, 142
+  orig: 3000, 1800
+  offset: 1191, 1257
+  index: -1
+04目3
+  rotate: false
+  xy: 2, 3387
+  size: 637, 285
+  orig: 3000, 1800
+  offset: 1107, 1264
+  index: -1
+04目3ハート
+  rotate: false
+  xy: 2024, 3961
+  size: 356, 108
+  orig: 3000, 1800
+  offset: 1255, 1311
+  index: -1
+04目3涙
+  rotate: false
+  xy: 1577, 3825
+  size: 494, 134
+  orig: 3000, 1800
+  offset: 1189, 1256
+  index: -1
+04目4
+  rotate: false
+  xy: 641, 3376
+  size: 629, 285
+  orig: 3000, 1800
+  offset: 1113, 1264
+  index: -1
+04目4ハート
+  rotate: false
+  xy: 957, 3980
+  size: 367, 89
+  orig: 3000, 1800
+  offset: 1239, 1319
+  index: -1
+04目4涙
+  rotate: false
+  xy: 2, 3866
+  size: 491, 129
+  orig: 3000, 1800
+  offset: 1189, 1256
+  index: -1
+04目5
+  rotate: false
+  xy: 3050, 3536
+  size: 600, 275
+  orig: 3000, 1800
+  offset: 1128, 1274
+  index: -1
+04目5涙
+  rotate: false
+  xy: 1068, 3833
+  size: 507, 132
+  orig: 3000, 1800
+  offset: 1177, 1269
+  index: -1
+04目6
+  rotate: false
+  xy: 2455, 3540
+  size: 593, 271
+  orig: 3000, 1800
+  offset: 1132, 1277
+  index: -1
+04目6涙
+  rotate: false
+  xy: 2073, 3818
+  size: 542, 137
+  orig: 3000, 1800
+  offset: 1148, 1282
+  index: -1
+05髪
+  rotate: true
+  xy: 1454, 1428
+  size: 1427, 1444
+  orig: 3000, 1800
+  offset: 705, 356
+  index: -1
+06眉1
+  rotate: false
+  xy: 2, 3697
+  size: 613, 154
+  orig: 3000, 1800
+  offset: 1081, 1414
+  index: -1
+06眉2
+  rotate: false
+  xy: 617, 3674
+  size: 628, 157
+  orig: 3000, 1800
+  offset: 1084, 1416
+  index: -1
+06眉3
+  rotate: false
+  xy: 1247, 3663
+  size: 564, 160
+  orig: 3000, 1800
+  offset: 1086, 1469
+  index: -1
+07射精
+  rotate: true
+  xy: 2470, 2857
+  size: 677, 1115
+  orig: 3000, 1800
+  offset: 997, 685
+  index: -1
+07射精後
+  rotate: true
+  xy: 495, 3853
+  size: 125, 571
+  orig: 3000, 1800
+  offset: 1455, 177
+  index: -1
+08付着
+  rotate: true
+  xy: 2, 2296
+  size: 943, 1450
+  orig: 3000, 1800
+  offset: 924, 286
+  index: -1
+09吐息
+  rotate: false
+  xy: 1272, 3241
+  size: 1196, 297
+  orig: 3000, 1800
+  offset: 830, 1082
+  index: -1
+
+cg22.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+00背景
+  rotate: true
+  xy: 2222, 1022
+  size: 3000, 1800
+  orig: 3000, 1800
+  offset: 0, 0
+  index: -1
+01ベース
+  rotate: false
+  xy: 2, 2222
+  size: 2218, 1800
+  orig: 3000, 1800
+  offset: 439, 0
+  index: -1
+
+cg23.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+00フレーム
+  rotate: false
+  xy: 2, 1348
+  size: 3366, 2020
+  orig: 3366, 2020
+  offset: 0, 0
+  index: -1

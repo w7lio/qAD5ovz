@@ -1,0 +1,48 @@
+
+sg1.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+0背景
+  rotate: true
+  xy: 2, 2
+  size: 509, 770
+  orig: 509, 770
+  offset: 0, 0
+  index: -1
+1ベース
+  rotate: true
+  xy: 513, 908
+  size: 375, 717
+  orig: 509, 770
+  offset: 134, 0
+  index: -1
+2手1
+  rotate: true
+  xy: 774, 111
+  size: 421, 262
+  orig: 509, 770
+  offset: 88, 248
+  index: -1
+2手2
+  rotate: false
+  xy: 513, 534
+  size: 384, 372
+  orig: 509, 770
+  offset: 125, 317
+  index: -1
+3射精
+  rotate: true
+  xy: 899, 764
+  size: 142, 288
+  orig: 509, 770
+  offset: 207, 429
+  index: -1
+4枠
+  rotate: false
+  xy: 2, 513
+  size: 509, 770
+  orig: 509, 770
+  offset: 0, 0
+  index: -1

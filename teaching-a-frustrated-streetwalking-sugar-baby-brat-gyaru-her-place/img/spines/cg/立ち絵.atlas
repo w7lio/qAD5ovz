@@ -1,0 +1,264 @@
+
+立ち絵.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+0衣装1
+  rotate: true
+  xy: 2, 834
+  size: 1650, 3762
+  orig: 2400, 4000
+  offset: 436, 41
+  index: -1
+1口1
+  rotate: false
+  xy: 972, 3822
+  size: 113, 79
+  orig: 2400, 4000
+  offset: 1273, 3222
+  index: -1
+1口1閉じ
+  rotate: false
+  xy: 207, 3857
+  size: 108, 44
+  orig: 2400, 4000
+  offset: 1279, 3239
+  index: -1
+1口2
+  rotate: false
+  xy: 22, 3880
+  size: 58, 21
+  orig: 2400, 4000
+  offset: 1302, 3246
+  index: -1
+1口3
+  rotate: false
+  xy: 395, 3849
+  size: 116, 52
+  orig: 2400, 4000
+  offset: 1281, 3242
+  index: -1
+1口4
+  rotate: false
+  xy: 631, 3834
+  size: 134, 67
+  orig: 2400, 4000
+  offset: 1272, 3229
+  index: -1
+1口5
+  rotate: true
+  xy: 124, 3877
+  size: 24, 26
+  orig: 2400, 4000
+  offset: 1325, 3242
+  index: -1
+1口5閉
+  rotate: false
+  xy: 2, 3887
+  size: 18, 14
+  orig: 2400, 4000
+  offset: 1329, 3246
+  index: -1
+1口6
+  rotate: true
+  xy: 152, 3859
+  size: 42, 53
+  orig: 2400, 4000
+  offset: 1317, 3229
+  index: -1
+1口6閉
+  rotate: false
+  xy: 82, 3879
+  size: 40, 22
+  orig: 2400, 4000
+  offset: 1317, 3242
+  index: -1
+1口7
+  rotate: false
+  xy: 767, 3833
+  size: 79, 68
+  orig: 2400, 4000
+  offset: 1296, 3219
+  index: -1
+1口7閉
+  rotate: false
+  xy: 317, 3857
+  size: 76, 44
+  orig: 2400, 4000
+  offset: 1295, 3231
+  index: -1
+1口8
+  rotate: false
+  xy: 848, 3833
+  size: 122, 68
+  orig: 2400, 4000
+  offset: 1273, 3225
+  index: -1
+1口9
+  rotate: false
+  xy: 513, 3845
+  size: 116, 56
+  orig: 2400, 4000
+  offset: 1281, 3242
+  index: -1
+2目1
+  rotate: false
+  xy: 865, 3600
+  size: 468, 215
+  orig: 2400, 4000
+  offset: 1062, 3351
+  index: -1
+2目1ハート
+  rotate: false
+  xy: 1373, 3813
+  size: 271, 88
+  orig: 2400, 4000
+  offset: 1167, 3383
+  index: -1
+2目2ハート
+  rotate: false
+  xy: 1373, 3813
+  size: 271, 88
+  orig: 2400, 4000
+  offset: 1167, 3383
+  index: -1
+2目1涙
+  rotate: false
+  xy: 2306, 3780
+  size: 373, 121
+  orig: 2400, 4000
+  offset: 1117, 3344
+  index: -1
+2目2
+  rotate: false
+  xy: 1335, 3589
+  size: 474, 215
+  orig: 2400, 4000
+  offset: 1059, 3351
+  index: -1
+2目2涙
+  rotate: false
+  xy: 2681, 3780
+  size: 372, 121
+  orig: 2400, 4000
+  offset: 1117, 3344
+  index: -1
+2目3涙
+  rotate: false
+  xy: 2681, 3780
+  size: 372, 121
+  orig: 2400, 4000
+  offset: 1117, 3344
+  index: -1
+2目4涙
+  rotate: false
+  xy: 2681, 3780
+  size: 372, 121
+  orig: 2400, 4000
+  offset: 1117, 3344
+  index: -1
+2目3
+  rotate: false
+  xy: 1811, 3564
+  size: 471, 215
+  orig: 2400, 4000
+  offset: 1058, 3351
+  index: -1
+2目3ハート
+  rotate: false
+  xy: 1646, 3806
+  size: 275, 95
+  orig: 2400, 4000
+  offset: 1164, 3386
+  index: -1
+2目4
+  rotate: false
+  xy: 2284, 3563
+  size: 468, 215
+  orig: 2400, 4000
+  offset: 1062, 3351
+  index: -1
+2目4ハート
+  rotate: false
+  xy: 1087, 3817
+  size: 284, 84
+  orig: 2400, 4000
+  offset: 1153, 3391
+  index: -1
+2目5
+  rotate: false
+  xy: 2754, 3558
+  size: 445, 215
+  orig: 2400, 4000
+  offset: 1073, 3351
+  index: -1
+2目5涙
+  rotate: false
+  xy: 1923, 3781
+  size: 381, 120
+  orig: 2400, 4000
+  offset: 1108, 3352
+  index: -1
+2目6
+  rotate: false
+  xy: 3201, 3549
+  size: 453, 217
+  orig: 2400, 4000
+  offset: 1068, 3349
+  index: -1
+2目6涙
+  rotate: false
+  xy: 3055, 3775
+  size: 408, 126
+  orig: 2400, 4000
+  offset: 1081, 3345
+  index: -1
+3前髪
+  rotate: true
+  xy: 2, 2486
+  size: 1112, 1225
+  orig: 2400, 4000
+  offset: 759, 2754
+  index: -1
+4眉1
+  rotate: false
+  xy: 446, 3667
+  size: 417, 164
+  orig: 2400, 4000
+  offset: 1040, 3457
+  index: -1
+4眉2
+  rotate: false
+  xy: 2, 3705
+  size: 442, 142
+  orig: 2400, 4000
+  offset: 1031, 3465
+  index: -1
+4眉3
+  rotate: false
+  xy: 3465, 3768
+  size: 436, 133
+  orig: 2400, 4000
+  offset: 1021, 3490
+  index: -1
+
+立ち絵2.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+0衣装2
+  rotate: false
+  xy: 2, 2
+  size: 1664, 3762
+  orig: 2400, 4000
+  offset: 422, 41
+  index: -1
+0衣装3
+  rotate: false
+  xy: 1668, 2
+  size: 1664, 3762
+  orig: 2400, 4000
+  offset: 422, 41
+  index: -1

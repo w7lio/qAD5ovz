@@ -1,0 +1,258 @@
+
+scene.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01カーソル
+  rotate: true
+  xy: 3929, 3450
+  size: 617, 104
+  orig: 1600, 900
+  offset: 8, 665
+  index: -1
+02アップ
+  rotate: false
+  xy: 3771, 2662
+  size: 100, 96
+  orig: 1600, 900
+  offset: 630, 560
+  index: -1
+02ダウン
+  rotate: false
+  xy: 3661, 2639
+  size: 100, 96
+  orig: 1600, 900
+  offset: 630, 133
+  index: -1
+03オプション
+  rotate: false
+  xy: 3661, 2737
+  size: 108, 108
+  orig: 1600, 900
+  offset: 874, 10
+  index: -1
+03タイトル
+  rotate: true
+  xy: 3730, 3143
+  size: 294, 107
+  orig: 1600, 900
+  offset: 989, 12
+  index: -1
+03決定
+  rotate: false
+  xy: 3839, 2760
+  size: 169, 107
+  orig: 1600, 900
+  offset: 1384, 238
+  index: -1
+03終了
+  rotate: true
+  xy: 3730, 2847
+  size: 294, 107
+  orig: 1600, 900
+  offset: 1292, 12
+  index: -1
+04p1
+  rotate: true
+  xy: 2380, 3439
+  size: 628, 773
+  orig: 1600, 900
+  offset: 0, 0
+  index: -1
+04p2
+  rotate: true
+  xy: 1604, 3439
+  size: 628, 774
+  orig: 1600, 900
+  offset: 0, 0
+  index: -1
+04p3
+  rotate: true
+  xy: 3155, 3439
+  size: 628, 772
+  orig: 1600, 900
+  offset: 0, 0
+  index: -1
+04未開放1
+  rotate: true
+  xy: 3929, 2869
+  size: 579, 68
+  orig: 1600, 900
+  offset: 29, 686
+  index: -1
+04未開放2
+  rotate: true
+  xy: 3999, 2869
+  size: 579, 68
+  orig: 1600, 900
+  offset: 29, 577
+  index: -1
+04未開放3
+  rotate: true
+  xy: 1256, 2586
+  size: 579, 68
+  orig: 1600, 900
+  offset: 29, 468
+  index: -1
+04未開放4
+  rotate: true
+  xy: 1326, 2586
+  size: 579, 68
+  orig: 1600, 900
+  offset: 29, 359
+  index: -1
+04未開放5
+  rotate: true
+  xy: 1396, 2586
+  size: 579, 68
+  orig: 1600, 900
+  offset: 29, 249
+  index: -1
+04未開放6
+  rotate: true
+  xy: 1466, 2586
+  size: 579, 68
+  orig: 1600, 900
+  offset: 29, 140
+  index: -1
+04未開放7
+  rotate: true
+  xy: 3661, 2858
+  size: 579, 67
+  orig: 1600, 900
+  offset: 29, 31
+  index: -1
+05未開放
+  rotate: false
+  xy: 2, 2715
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放0
+  rotate: true
+  xy: 804, 2365
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放1
+  rotate: false
+  xy: 2, 2263
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放10
+  rotate: false
+  xy: 3140, 1733
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放11
+  rotate: false
+  xy: 1256, 2082
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放12
+  rotate: true
+  xy: 804, 1563
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放13
+  rotate: false
+  xy: 2, 1811
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放14
+  rotate: false
+  xy: 2, 1359
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放15
+  rotate: false
+  xy: 2058, 1631
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放16
+  rotate: false
+  xy: 1256, 1630
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放2
+  rotate: false
+  xy: 2407, 2987
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放3
+  rotate: true
+  xy: 3209, 2637
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放4
+  rotate: false
+  xy: 1604, 2986
+  size: 801, 451
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放5
+  rotate: false
+  xy: 2407, 2535
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放6
+  rotate: false
+  xy: 3209, 2185
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放7
+  rotate: false
+  xy: 1536, 2534
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放8
+  rotate: false
+  xy: 2338, 2083
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+05開放9
+  rotate: false
+  xy: 2860, 1281
+  size: 800, 450
+  orig: 1600, 900
+  offset: 757, 235
+  index: -1
+0ベース
+  rotate: false
+  xy: 2, 3167
+  size: 1600, 900
+  orig: 1600, 900
+  offset: 0, 0
+  index: -1

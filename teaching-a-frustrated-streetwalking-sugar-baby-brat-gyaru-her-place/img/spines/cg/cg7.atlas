@@ -1,0 +1,328 @@
+
+cg7.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+00背景
+  rotate: false
+  xy: 2, 2648
+  size: 2400, 1440
+  orig: 2400, 1440
+  offset: 0, 0
+  index: -1
+01男ベース1
+  rotate: false
+  xy: 1607, 1206
+  size: 625, 1440
+  orig: 2400, 1440
+  offset: 1775, 0
+  index: -1
+01男ベース2
+  rotate: true
+  xy: 1604, 755
+  size: 449, 1440
+  orig: 2400, 1440
+  offset: 1951, 0
+  index: -1
+02ベース
+  rotate: true
+  xy: 2404, 2024
+  size: 2064, 1440
+  orig: 2400, 1440
+  offset: 0, 0
+  index: -1
+02髪
+  rotate: false
+  xy: 829, 150
+  size: 95, 342
+  orig: 2400, 1440
+  offset: 36, 179
+  index: -1
+03エフェクト
+  rotate: true
+  xy: 2, 494
+  size: 2152, 922
+  orig: 2400, 1440
+  offset: 93, 4
+  index: -1
+04目1
+  rotate: false
+  xy: 2657, 1241
+  size: 303, 184
+  orig: 2400, 1440
+  offset: 302, 1184
+  index: -1
+04目1ハート
+  rotate: false
+  xy: 633, 83
+  size: 189, 96
+  orig: 2400, 1440
+  offset: 362, 1216
+  index: -1
+04目1涙
+  rotate: true
+  xy: 2234, 1890
+  size: 241, 120
+  orig: 2400, 1440
+  offset: 336, 1184
+  index: -1
+04目2
+  rotate: false
+  xy: 2978, 386
+  size: 311, 174
+  orig: 2400, 1440
+  offset: 297, 1194
+  index: -1
+04目2ハート
+  rotate: true
+  xy: 3515, 23
+  size: 176, 86
+  orig: 2400, 1440
+  offset: 359, 1218
+  index: -1
+04目2涙
+  rotate: false
+  xy: 2695, 122
+  size: 243, 118
+  orig: 2400, 1440
+  offset: 336, 1192
+  index: -1
+04目3
+  rotate: true
+  xy: 633, 181
+  size: 311, 194
+  orig: 2400, 1440
+  offset: 296, 1189
+  index: -1
+04目3ハート
+  rotate: true
+  xy: 3515, 201
+  size: 173, 89
+  orig: 2400, 1440
+  offset: 355, 1219
+  index: -1
+04目3涙
+  rotate: false
+  xy: 3275, 138
+  size: 238, 110
+  orig: 2400, 1440
+  offset: 333, 1186
+  index: -1
+04目4
+  rotate: true
+  xy: 3291, 250
+  size: 310, 181
+  orig: 2400, 1440
+  offset: 302, 1187
+  index: -1
+04目4ハート
+  rotate: true
+  xy: 3474, 376
+  size: 184, 89
+  orig: 2400, 1440
+  offset: 349, 1219
+  index: -1
+04目4涙
+  rotate: true
+  xy: 3156, 146
+  size: 238, 117
+  orig: 2400, 1440
+  offset: 336, 1184
+  index: -1
+04目5
+  rotate: false
+  xy: 2354, 1237
+  size: 301, 188
+  orig: 2400, 1440
+  offset: 302, 1180
+  index: -1
+04目5涙
+  rotate: true
+  xy: 2234, 2133
+  size: 247, 121
+  orig: 2400, 1440
+  offset: 330, 1188
+  index: -1
+04目6
+  rotate: true
+  xy: 2978, 85
+  size: 299, 176
+  orig: 2400, 1440
+  offset: 302, 1192
+  index: -1
+04目6涙
+  rotate: true
+  xy: 2234, 2382
+  size: 264, 130
+  orig: 2400, 1440
+  offset: 317, 1188
+  index: -1
+05口1
+  rotate: false
+  xy: 2234, 1262
+  size: 104, 110
+  orig: 2400, 1440
+  offset: 417, 1068
+  index: -1
+05口2
+  rotate: true
+  xy: 1580, 1165
+  size: 50, 22
+  orig: 2400, 1440
+  offset: 441, 1114
+  index: -1
+05口3
+  rotate: true
+  xy: 1548, 1667
+  size: 90, 53
+  orig: 2400, 1440
+  offset: 423, 1110
+  index: -1
+05口4
+  rotate: true
+  xy: 824, 51
+  size: 97, 74
+  orig: 2400, 1440
+  offset: 420, 1098
+  index: -1
+05口5
+  rotate: false
+  xy: 1548, 1150
+  size: 22, 24
+  orig: 2400, 1440
+  offset: 452, 1112
+  index: -1
+05口6
+  rotate: false
+  xy: 1548, 1176
+  size: 30, 39
+  orig: 2400, 1440
+  offset: 455, 1105
+  index: -1
+05口7
+  rotate: false
+  xy: 633, 21
+  size: 114, 60
+  orig: 2400, 1440
+  offset: 430, 1095
+  index: -1
+05口8
+  rotate: true
+  xy: 1523, 909
+  size: 96, 58
+  orig: 2400, 1440
+  offset: 420, 1109
+  index: -1
+06髪
+  rotate: false
+  xy: 1523, 203
+  size: 904, 550
+  orig: 2400, 1440
+  offset: 46, 890
+  index: -1
+07眉1
+  rotate: true
+  xy: 2234, 1624
+  size: 264, 118
+  orig: 2400, 1440
+  offset: 281, 1266
+  index: -1
+07眉2
+  rotate: true
+  xy: 2234, 1374
+  size: 248, 118
+  orig: 2400, 1440
+  offset: 296, 1266
+  index: -1
+07眉3
+  rotate: false
+  xy: 2695, 2
+  size: 241, 118
+  orig: 2400, 1440
+  offset: 278, 1322
+  index: -1
+08射精
+  rotate: false
+  xy: 2695, 242
+  size: 281, 511
+  orig: 2400, 1440
+  offset: 1969, 233
+  index: -1
+08射精外
+  rotate: false
+  xy: 2, 40
+  size: 629, 452
+  orig: 2400, 1440
+  offset: 1199, 988
+  index: -1
+08射精後
+  rotate: false
+  xy: 3643, 22
+  size: 370, 746
+  orig: 2400, 1440
+  offset: 1753, 275
+  index: -1
+09付着
+  rotate: true
+  xy: 926, 1007
+  size: 750, 620
+  orig: 2400, 1440
+  offset: 1249, 235
+  index: -1
+09絶頂
+  rotate: false
+  xy: 3643, 770
+  size: 409, 655
+  orig: 2400, 1440
+  offset: 1991, 224
+  index: -1
+10母乳
+  rotate: true
+  xy: 1548, 1217
+  size: 448, 50
+  orig: 2400, 1440
+  offset: 271, 0
+  index: -1
+11吐息
+  rotate: true
+  xy: 2429, 43
+  size: 710, 264
+  orig: 2400, 1440
+  offset: 189, 962
+  index: -1
+12射精
+  rotate: true
+  xy: 926, 142
+  size: 863, 595
+  orig: 2400, 1440
+  offset: 1537, 845
+  index: -1
+12射精後
+  rotate: false
+  xy: 2356, 1427
+  size: 863, 595
+  orig: 2400, 1440
+  offset: 1537, 845
+  index: -1
+12挿入
+  rotate: true
+  xy: 3046, 562
+  size: 863, 595
+  orig: 2400, 1440
+  offset: 1537, 845
+  index: -1
+12挿入前
+  rotate: false
+  xy: 3221, 1427
+  size: 863, 595
+  orig: 2400, 1440
+  offset: 1537, 845
+  index: -1
+13エフェクト
+  rotate: true
+  xy: 926, 1759
+  size: 887, 679
+  orig: 2400, 1440
+  offset: 1513, 761
+  index: -1

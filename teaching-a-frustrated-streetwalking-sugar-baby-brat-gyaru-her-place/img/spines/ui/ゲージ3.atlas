@@ -1,0 +1,13 @@
+
+ゲージ3.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ゲージ3
+  rotate: false
+  xy: 2, 346
+  size: 349, 5
+  orig: 349, 5
+  offset: 0, 0
+  index: -1

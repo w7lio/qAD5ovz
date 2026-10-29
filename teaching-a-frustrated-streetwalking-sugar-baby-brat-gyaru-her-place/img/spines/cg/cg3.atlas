@@ -1,0 +1,279 @@
+
+cg3.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+00背景
+  rotate: true
+  xy: 2404, 1694
+  size: 2400, 1440
+  orig: 2400, 1440
+  offset: 0, 0
+  index: -1
+01ベース
+  rotate: false
+  xy: 2, 2654
+  size: 2400, 1440
+  orig: 2400, 1440
+  offset: 0, 0
+  index: -1
+02目1
+  rotate: true
+  xy: 1662, 1589
+  size: 191, 148
+  orig: 2400, 1440
+  offset: 605, 821
+  index: -1
+02目1ハート
+  rotate: true
+  xy: 25, 17
+  size: 22, 19
+  orig: 2400, 1440
+  offset: 666, 848
+  index: -1
+02目1涙
+  rotate: true
+  xy: 29, 41
+  size: 28, 18
+  orig: 2400, 1440
+  offset: 710, 818
+  index: -1
+02目2
+  rotate: true
+  xy: 1812, 1589
+  size: 191, 141
+  orig: 2400, 1440
+  offset: 605, 828
+  index: -1
+02目2ハート
+  rotate: false
+  xy: 596, 426
+  size: 18, 18
+  orig: 2400, 1440
+  offset: 668, 844
+  index: -1
+02目2涙
+  rotate: true
+  xy: 405, 105
+  size: 28, 15
+  orig: 2400, 1440
+  offset: 712, 824
+  index: -1
+02目3
+  rotate: true
+  xy: 422, 2
+  size: 193, 148
+  orig: 2400, 1440
+  offset: 603, 821
+  index: -1
+02目3ハート
+  rotate: false
+  xy: 2, 25
+  size: 21, 21
+  orig: 2400, 1440
+  offset: 670, 851
+  index: -1
+02目3涙
+  rotate: true
+  xy: 49, 20
+  size: 26, 17
+  orig: 2400, 1440
+  offset: 710, 819
+  index: -1
+02目4涙
+  rotate: true
+  xy: 49, 20
+  size: 26, 17
+  orig: 2400, 1440
+  offset: 710, 819
+  index: -1
+02目4
+  rotate: true
+  xy: 968, 742
+  size: 196, 148
+  orig: 2400, 1440
+  offset: 600, 821
+  index: -1
+02目4ハート
+  rotate: true
+  xy: 405, 82
+  size: 21, 11
+  orig: 2400, 1440
+  offset: 668, 855
+  index: -1
+02目5
+  rotate: true
+  xy: 968, 940
+  size: 191, 154
+  orig: 2400, 1440
+  offset: 605, 815
+  index: -1
+02目5涙
+  rotate: false
+  xy: 2, 48
+  size: 25, 21
+  orig: 2400, 1440
+  offset: 712, 822
+  index: -1
+02目6
+  rotate: true
+  xy: 1955, 1589
+  size: 191, 140
+  orig: 2400, 1440
+  offset: 605, 829
+  index: -1
+02目6涙
+  rotate: true
+  xy: 596, 446
+  size: 27, 19
+  orig: 2400, 1440
+  offset: 717, 829
+  index: -1
+03口1
+  rotate: false
+  xy: 2, 71
+  size: 88, 62
+  orig: 2400, 1440
+  offset: 536, 664
+  index: -1
+03口2
+  rotate: true
+  xy: 578, 424
+  size: 49, 16
+  orig: 2400, 1440
+  offset: 556, 692
+  index: -1
+03口3
+  rotate: false
+  xy: 189, 50
+  size: 94, 24
+  orig: 2400, 1440
+  offset: 540, 693
+  index: -1
+03口4
+  rotate: true
+  xy: 1124, 972
+  size: 101, 40
+  orig: 2400, 1440
+  offset: 536, 683
+  index: -1
+03口5
+  rotate: true
+  xy: 49, 48
+  size: 21, 20
+  orig: 2400, 1440
+  offset: 559, 693
+  index: -1
+03口6
+  rotate: false
+  xy: 578, 475
+  size: 29, 41
+  orig: 2400, 1440
+  offset: 557, 682
+  index: -1
+03口7
+  rotate: true
+  xy: 1124, 1075
+  size: 56, 52
+  orig: 2400, 1440
+  offset: 552, 675
+  index: -1
+03口8
+  rotate: true
+  xy: 1124, 882
+  size: 88, 40
+  orig: 2400, 1440
+  offset: 546, 680
+  index: -1
+03口9
+  rotate: false
+  xy: 92, 44
+  size: 95, 30
+  orig: 2400, 1440
+  offset: 540, 693
+  index: -1
+04髪
+  rotate: true
+  xy: 2, 1133
+  size: 1519, 1176
+  orig: 2400, 1440
+  offset: 336, 264
+  index: -1
+05眉1
+  rotate: false
+  xy: 92, 76
+  size: 311, 57
+  orig: 2400, 1440
+  offset: 407, 980
+  index: -1
+05眉2
+  rotate: true
+  xy: 512, 202
+  size: 314, 64
+  orig: 2400, 1440
+  offset: 412, 970
+  index: -1
+05眉3
+  rotate: true
+  xy: 882, 383
+  size: 390, 76
+  orig: 2400, 1440
+  offset: 313, 1004
+  index: -1
+06咥え口
+  rotate: true
+  xy: 578, 94
+  size: 328, 242
+  orig: 2400, 1440
+  offset: 455, 573
+  index: -1
+06挿入
+  rotate: false
+  xy: 617, 424
+  size: 263, 349
+  orig: 2400, 1440
+  offset: 409, 395
+  index: -1
+06挿入前
+  rotate: false
+  xy: 1180, 940
+  size: 480, 840
+  orig: 2400, 1440
+  offset: 216, 360
+  index: -1
+07射精中
+  rotate: false
+  xy: 2, 135
+  size: 418, 381
+  orig: 2400, 1440
+  offset: 283, 469
+  index: -1
+07射精外
+  rotate: false
+  xy: 422, 197
+  size: 88, 319
+  orig: 2400, 1440
+  offset: 233, 1121
+  index: -1
+07射精後
+  rotate: true
+  xy: 2, 518
+  size: 255, 613
+  orig: 2400, 1440
+  offset: 282, 584
+  index: -1
+08付着
+  rotate: true
+  xy: 1180, 1782
+  size: 870, 839
+  orig: 2400, 1440
+  offset: 599, 323
+  index: -1
+09吐息
+  rotate: false
+  xy: 2, 775
+  size: 964, 356
+  orig: 2400, 1440
+  offset: 186, 472
+  index: -1
