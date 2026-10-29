@@ -19,7 +19,7 @@ wget --header="Cookie: accountToken=VALUE" \
 
 ### 2.Giải nén an toàn: 
 ```
-sudo apt update
+sudo apt update -y
 sudo apt install p7zip-full
 
 7z x FILE -o"NewFolder"
