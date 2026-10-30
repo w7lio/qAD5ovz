@@ -56,7 +56,13 @@ Giữ nhất quán cách xưng hô, tính cách nhân vật và sắc thái kín
 
 ### 3.Push
 > [!WARNING]
-> Nên xoá tất cả các file và chỉ để lại file index
+```
+rm -f Game.exe notification_helper.exe debug.log "★Readme.txt" \
+  nw.dll nw_elf.dll node.dll icudtl.dat \
+  nw_100_percent.pak nw_200_percent.pak resources.pak \
+  v8_context_snapshot.bin d3dcompiler_47.dll \
+  libEGL.dll libGLESv2.dll ffmpeg.dll
+```
 > ```find -type f -size +100M -printf '%s bytes\t%p\n' | sort -nr```   
 > ```git rm --cached "PATH"  ```
 
