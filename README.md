@@ -56,6 +56,7 @@ Giữ nhất quán cách xưng hô, tính cách nhân vật và sắc thái kín
 
 ### 3.Push
 > [!WARNING]
+> Nên xoá tất cả các file và chỉ để lại file index
 > ```find -type f -size +100M -printf '%s bytes\t%p\n' | sort -nr```   
 > ```git rm --cached "PATH"  ```
 
