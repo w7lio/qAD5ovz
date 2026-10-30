@@ -56,7 +56,7 @@ Giữ nhất quán cách xưng hô, tính cách nhân vật và sắc thái kín
 
 ### 3.Push
 > [!WARNING]
->
+> Xoá File nặng và không cần
 ```
 rm -f Game.exe notification_helper.exe debug.log "★Readme.txt" \
   nw.dll nw_elf.dll node.dll icudtl.dat \
