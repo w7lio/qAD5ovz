@@ -13,7 +13,7 @@ wget --header="Cookie: accountToken=VALUE" \
 --content-disposition "URL"
 ```
 > [!TIP]
-> Ưu tiên file APK tải ở Vexfile, Pixel
+> Ưu tiên file APK tải ở Vexfile, Pixel, Yandex
 > (Terabox)
 > https://www.teraboxdownloader.pro/
 
@@ -27,6 +27,21 @@ sudo apt install p7zip-full
 > [!IMPORTANT]
 > `grep -rInF --binary-files=without-match '=====' .`   
 > Prompt:  
+```
+Cấu Trúc File Này
+```
+
+```
+Tạo cho tôi một web có chức năng
+Tách hết phần cần dịch ra, xong tạo ra 1 file chỉ có text cần dịch 
+chỉ cần paste file đó bản đã dịch lại web thì nó sẽ xác nhập phần cần dịch vào code
+```
+
+```
+Hãy Việt hóa đoạn tiếng Nhật sang tiếng Việt tự nhiên như lời thoại game chuyên nghiệp.
+Ưu tiên đúng nghĩa và hàm ý theo ngữ cảnh, không dịch máy móc từng chữ. 
+Giữ nhất quán cách xưng hô, tính cách nhân vật và sắc thái kính ngữ, mỉa mai. 
+```
 
 > [!TIP] 
 > Preview:
