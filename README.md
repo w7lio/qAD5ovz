@@ -41,6 +41,7 @@ chỉ cần paste file đó bản đã dịch lại web thì nó sẽ xác nhậ
 Hãy Việt hóa đoạn tiếng Nhật sang tiếng Việt tự nhiên như lời thoại game chuyên nghiệp.
 Ưu tiên đúng nghĩa và hàm ý theo ngữ cảnh, không dịch máy móc từng chữ. 
 Giữ nhất quán cách xưng hô, tính cách nhân vật và sắc thái kính ngữ, mỉa mai. 
+Đầu ra code block txt
 ```
 
 > [!TIP] 
