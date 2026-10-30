@@ -82,7 +82,9 @@ git push --force
 
 > [!TIP] 
 > Sync Readme
+`lấy thông tin phiên`
+*khôi phục về readme mặc định repo*
 ```
-git fetch origin `lấy thông tin phiên`
-git restore --source=origin/main -- README.md *khôi phục về readme mặc định repo*
+git fetch origin
+git restore --source=origin/main -- README.md 
 ```
