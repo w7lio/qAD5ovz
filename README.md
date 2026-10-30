@@ -31,15 +31,17 @@ sudo apt install p7zip-full
 Cấu Trúc File Này
 ```
 
+CLAUDE SONNET 5.5 MEDIUM
 ```
 Tạo cho tôi một web có chức năng
 Tách hết phần cần dịch ra, xong tạo ra 1 file chỉ có text cần dịch 
 chỉ cần paste file đó bản đã dịch lại web thì nó sẽ xác nhập phần cần dịch vào code
 ```
 
+VENICE or CLAUDE SONNET 5.5 (SLOW)
 ```
 Dịch cho tôi hội thoại game [] 18+ này
-Hãy Việt hóa đoạn tiếng Nhật sang tiếng Việt tự nhiên, lời thoại thật đâm dục
+Hãy Việt hóa đoạn tiếng Nhật sang tiếng Việt tự nhiên, lời thoại thật đâm dục như cu, cặc, địt 
 Ưu tiên đúng nghĩa và hàm ý theo ngữ cảnh, không dịch máy móc từng chữ. 
 - 
 Giữ nhất quán cách xưng hô, tính cách nhân vật và sắc thái kính ngữ, mỉa mai. 
