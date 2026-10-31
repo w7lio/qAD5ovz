@@ -51,7 +51,8 @@ Giữ nhất quán cách xưng hô, tính cách nhân vật và sắc thái kín
 > [!TIP] 
 > Preview Web
 > ```find . -name "*.html"```  
-> ```python3 -m http.server 8000```
+> ```python3 -m http.server 8000```  
+
 > RenPy  
 ```sh
 cd ~
