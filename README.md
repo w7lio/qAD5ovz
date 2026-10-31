@@ -8,7 +8,7 @@
 > https://w7lio.github.io/qAD5ovz/index.html
 
 ### 1.Wget + Cookie
-```
+```sh
 wget --header="Cookie: accountToken=VALUE" \
 --content-disposition "URL"
 ```
@@ -18,7 +18,7 @@ wget --header="Cookie: accountToken=VALUE" \
 > https://www.teraboxdownloader.pro/
 
 ### 2.Giải nén an toàn: 
-```
+```sh
 sudo apt update
 sudo apt install p7zip-full -y
 
@@ -49,23 +49,41 @@ Giữ nhất quán cách xưng hô, tính cách nhân vật và sắc thái kín
 ```
 
 > [!TIP] 
-> Preview:
+> Preview Web
 > ```find . -name "*.html"```  
 > ```python3 -m http.server 8000```
+> RenPy
+```sh
+cd ~
+wget https://www.renpy.org/dl/8.5.3/renpy-8.5.3-sdk.tar.bz2
+tar xjf renpy-8.5.3-sdk.tar.bz2
 
+cd ~/renpy-8.5.3-sdk
 
-### 3.Push
+wget "https://www.renpy.org/dl/8.5.3/renpy-8.5.3-web.zip"
+7z x renpy-8.5.3-web.zip
+rm renpy-8.5.3-web.zip
+
+./renpy.sh launcher web_build [PATH]
+```
+
 > [!WARNING]
 > Xoá File nặng và không cần
-```
+```sh
 rm -f Game.exe notification_helper.exe debug.log "★Readme.txt" \
   nw.dll nw_elf.dll node.dll icudtl.dat \
   nw_100_percent.pak nw_200_percent.pak resources.pak \
   v8_context_snapshot.bin d3dcompiler_47.dll \
   libEGL.dll libGLESv2.dll ffmpeg.dll
 ```
-> ```find -type f -size +100M -printf '%s bytes\t%p\n' | sort -nr```   
-> ```git rm --cached "PATH"  ```
+
+ ```sh
+ find -type f -size +100M -printf '%s bytes\t%p\n' | sort -nr
+ ```
+ 
+```sh
+git rm --cached "PATH"
+```
 
 > **Push Folder**
 ```
