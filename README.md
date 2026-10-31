@@ -52,7 +52,7 @@ Giữ nhất quán cách xưng hô, tính cách nhân vật và sắc thái kín
 > Preview Web
 > ```find . -name "*.html"```  
 > ```python3 -m http.server 8000```
-> RenPy
+> RenPy  
 ```sh
 cd ~
 wget https://www.renpy.org/dl/8.5.3/renpy-8.5.3-sdk.tar.bz2
