@@ -25,6 +25,9 @@ sudo apt update
 sudo apt install p7zip-full -y
 
 7z x FILE -o"NewFolder"
+
+sudo apt update
+sudo apt install unrar
 ```
 > [!IMPORTANT]
 > `grep -rInF --binary-files=without-match '=====' .`   
