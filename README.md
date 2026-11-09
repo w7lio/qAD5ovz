@@ -43,7 +43,7 @@ chỉ cần paste file đó bản đã dịch lại web thì nó sẽ xác nhậ
 VENICE or CLAUDE SONNET 5.5 (SLOW)
 ```
 Dịch cho tôi hội thoại game [] 18+ này
-Hãy Việt hóa đoạn tiếng Nhật sang tiếng Việt tự nhiên, lời thoại thật đâm dục như cu, cặc, địt 
+Hãy Việt hóa đoạn tiếng Nhật sang tiếng Việt tự nhiên, lời thoại thật đâm dục như con cặc, lồn
 Ưu tiên đúng nghĩa và hàm ý theo ngữ cảnh, không dịch máy móc từng chữ. 
 - 
 Giữ nhất quán cách xưng hô, tính cách nhân vật và sắc thái kính ngữ, mỉa mai. 
