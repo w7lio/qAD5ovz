@@ -1,0 +1,8 @@
+[
+null,
+{"id":1,"animationId":0,"description":"\\IMG[Item, 18, 122, 122, 100, middle]　\\LH[48]\\c[14]こんぼう\\c[0]\\n　　　　　　　木を加工して作られた安価な打撃武器","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":0,"name":"こんぼう","note":"","params":[0,0,0,0,0,0,0,0],"price":40,"wtypeId":0},
+{"id":2,"animationId":0,"description":"青銅で出来た剣。あまり切れ味は良くない。","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":0,"name":"せいどうのつるぎ","note":"","params":[0,0,10,0,0,0,0,0],"price":120,"wtypeId":0},
+{"id":3,"animationId":0,"description":"\\IMG[Item, 19, 122, 122, 100, middle]　\\LH[48]\\c[14]まどうしのつえ\\c[0]\\n　　　　　　　見習い魔法使い御用達の杖\\n　　　　　　　魔法使いへの道はこの杖から始まる","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":0,"name":"まどうしのつえ","note":"","params":[0,0,3,0,0,0,0,0],"price":70,"wtypeId":0},
+{"id":4,"animationId":0,"description":"\\IMG[Item, 18, 122, 122, 100, middle]　\\LH[48]\\c[14]こんぼう\\c[0]\\n　　　　　　　木を加工して作られた安価な打撃武器","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":0,"name":"こんぼう","note":"","params":[0,0,0,0,0,0,0,0],"price":0,"wtypeId":0},
+{"id":5,"animationId":0,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0,"wtypeId":0}
+]
