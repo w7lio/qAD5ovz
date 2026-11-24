@@ -1,4 +1,3 @@
-Đéo push readme nên nó về mẹ bản cũ rồi
 > [!NOTE]
 はみはみ堂 (Hamihamido)   
 > https://w7lio.github.io/qAD5ovz/I_Got_an_Insemination_App/index.html   
@@ -14,6 +13,9 @@ Mezzo-Pumpkin
 > https://w7lio.github.io/qAD5ovz/Sex_a_maid_and_a_Desert_Island/index.html  
 
 > https://w7lio.github.io/qAD5ovz/index.html
+
+**🍎 Ios cần xem ở chế độ máy tính để nghe được âm thanh**
+--
 
 ### 1.Wget + Cookie
 ```sh
