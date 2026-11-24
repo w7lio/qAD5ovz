@@ -1,254 +1,337 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RPG Save Hub — Browser Transfer</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Save Manager</title>
 <style>
-:root{color-scheme:dark;--bg:#0a1020;--panel:#121b2e;--line:#2b3955;--text:#eaf0ff;--muted:#9eacc6;--accent:#929fff;--good:#6de0ac;--bad:#ff9292;--warn:#ffd18b}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% 0,#1a2850 0,transparent 38%),var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}.wrap{max-width:920px;margin:auto;padding:30px 16px 60px}.head{display:flex;gap:13px;align-items:center;margin-bottom:22px}.logo{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:#283763;font-size:24px}.head h1{font-size:23px;margin:0}.head p{margin:2px 0 0;color:var(--muted);font-size:13px}.panel{background:rgba(18,27,46,.96);border:1px solid var(--line);border-radius:17px;padding:20px;margin:15px 0}.panel h2{font-size:17px;margin:0 0 9px}.muted{color:var(--muted)}.notice{background:#151e35;border:1px solid #40517b;border-radius:12px;padding:13px 15px;color:#cbd5f0;font-size:13px}.warning{color:var(--warn)}.buttons{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0}.btn{border:1px solid var(--line);background:#202c47;color:var(--text);border-radius:10px;padding:10px 14px;font:inherit;font-weight:650;cursor:pointer}.btn.primary{background:var(--accent);color:#11182e;border-color:transparent}.btn:disabled{opacity:.5;cursor:wait}.status{background:#0b1427;border:1px solid var(--line);border-radius:10px;padding:11px 12px;color:var(--muted);font-size:13px;overflow-wrap:anywhere}.status.good{color:var(--good)}.status.bad{color:var(--bad)}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}.stat{background:#0d1629;border:1px solid var(--line);border-radius:11px;padding:12px}.stat strong{font-size:21px;display:block}.stat span{font-size:12px;color:var(--muted)}.db-list{display:grid;gap:9px;margin-top:12px}.db{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#0d1629}.db strong{display:block;overflow-wrap:anywhere}.db small{color:var(--muted)}.foot{font-size:12px;color:var(--muted);margin-top:18px}input{max-width:100%;color:var(--text)}@media(max-width:560px){.wrap{padding:18px 11px 40px}.panel{padding:15px}.stats{grid-template-columns:1fr}.head h1{font-size:20px}}
+:root{--bg:#14161a;--panel:#1d2026;--line:#2c313a;--tx:#e6e8ec;--mut:#8b93a1;--ac:#5b9dff;--dg:#ff6b6b;--ok:#4cd08a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{padding:16px 20px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+h1{margin:0;font-size:18px}
+header small{color:var(--mut)}
+main{max-width:1100px;margin:0 auto;padding:16px}
+.tabs{display:flex;gap:4px;margin-bottom:12px}
+.tab{padding:8px 16px;border:1px solid var(--line);background:var(--panel);color:var(--mut);cursor:pointer;border-radius:8px 8px 0 0}
+.tab.on{color:var(--tx);border-bottom-color:var(--ac);box-shadow:inset 0 -2px var(--ac)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;align-items:center}
+input[type=text],textarea,select{background:var(--panel);border:1px solid var(--line);color:var(--tx);border-radius:6px;padding:7px 10px;font:inherit}
+input[type=text]{min-width:200px;flex:1}
+button{background:var(--panel);border:1px solid var(--line);color:var(--tx);border-radius:6px;padding:7px 12px;cursor:pointer;font:inherit}
+button:hover{border-color:var(--ac)}
+button.dg:hover{border-color:var(--dg);color:var(--dg)}
+button.pr{background:var(--ac);border-color:var(--ac);color:#06101f;font-weight:600}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:3px 10px;border-radius:99px;border:1px solid var(--line);background:var(--panel);cursor:pointer;color:var(--mut);font-size:12px}
+.chip.on{background:var(--ac);color:#06101f;border-color:var(--ac)}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:500;font-size:12px}
+td.k{font-family:ui-monospace,Consolas,monospace;word-break:break-all}
+td.v{color:var(--mut);font-family:ui-monospace,Consolas,monospace;max-width:380px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+td.n{white-space:nowrap;color:var(--mut)}
+tr:hover td{background:#22262d}
+.acts{white-space:nowrap}
+.acts button{padding:3px 8px;font-size:12px}
+.empty{padding:30px;text-align:center;color:var(--mut)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px;margin-bottom:10px}
+.card h3{margin:0 0 6px;font-size:15px}
+.card .st{color:var(--mut);font-size:12px;margin:2px 0}
+dialog{background:var(--panel);color:var(--tx);border:1px solid var(--line);border-radius:10px;width:min(720px,94vw);padding:16px}
+dialog::backdrop{background:#000a}
+dialog textarea{width:100%;min-height:260px;font-family:ui-monospace,Consolas,monospace;font-size:13px}
+dialog input[type=text]{width:100%;margin-bottom:8px}
+.row{display:flex;gap:8px;justify-content:flex-end;margin-top:10px}
+#toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ok);color:#04150b;padding:8px 16px;border-radius:8px;opacity:0;transition:.25s;pointer-events:none;font-weight:600}
+#toast.show{opacity:1}#toast.err{background:var(--dg);color:#fff}
+.note{color:var(--mut);font-size:12px;margin:10px 0}
 </style>
 </head>
 <body>
-<main class="wrap">
-  <header class="head"><div class="logo">▣</div><div><h1>RPG Save Hub</h1><p>Sao lưu dữ liệu trình duyệt để chuyển save giữa PC và mobile</p></div></header>
+<header>
+  <h1>🎮 Save Manager</h1>
+  <small id="origin"></small>
+</header>
+<main>
+  <div class="tabs">
+    <div class="tab on" data-t="ls">localStorage</div>
+    <div class="tab" data-t="idb">IndexedDB</div>
+  </div>
 
-  <section class="notice">
-    <strong>Quan trọng:</strong> trang này chỉ đọc được dữ liệu của <code>https://w7lio.github.io</code> khi mở trên đúng origin đó. Vì các game trong cùng origin dùng chung vùng lưu trữ trình duyệt, công cụ có thể sao lưu localStorage và IndexedDB của origin hiện tại — không thể chỉ đọc riêng một thư mục game. File backup có thể chứa dữ liệu của nhiều game trên cùng origin; đừng chia sẻ công khai.
-  </section>
-
-  <section class="panel">
-    <h2>1. Quét dữ liệu trên trình duyệt này</h2>
-    <p class="muted">Hãy mở trang này từ GitHub Pages rồi bấm quét. Trên thiết bị đích, hãy mở từng game ít nhất một lần trước khi import để game khởi tạo vùng lưu trữ.</p>
-    <div class="buttons">
-      <button class="btn" id="scanBtn">Quét localStorage + IndexedDB</button>
-      <button class="btn primary" id="exportBtn" disabled>Export backup JSON</button>
+  <section id="ls">
+    <div class="bar">
+      <input type="text" id="q" placeholder="Tìm key hoặc nội dung...">
+      <button id="add">+ Thêm</button>
+      <button id="expSel">Xuất đã chọn</button>
+      <button id="expAll" class="pr">Xuất tất cả</button>
+      <button id="imp">Nhập file</button>
+      <button id="delSel" class="dg">Xoá đã chọn</button>
     </div>
-    <div class="stats">
-      <div class="stat"><strong id="localCount">—</strong><span>Mục localStorage</span></div>
-      <div class="stat"><strong id="dbCount">—</strong><span>Database IndexedDB</span></div>
-      <div class="stat"><strong id="recordCount">—</strong><span>Bản ghi IndexedDB</span></div>
-    </div>
-    <div id="scanStatus" class="status">Chưa quét dữ liệu.</div>
-    <div id="dbList" class="db-list"></div>
+    <div class="chips" id="chips"></div>
+    <table>
+      <thead><tr><th style="width:28px"><input type="checkbox" id="all"></th><th>Key</th><th>Giá trị</th><th>Dung lượng</th><th></th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <div class="note" id="sum"></div>
   </section>
 
-  <section class="panel">
-    <h2>2. Import backup từ thiết bị khác</h2>
-    <p class="muted">Chọn file JSON đã export trên thiết bị nguồn. Công cụ sẽ nhập các khóa localStorage và bản ghi IndexedDB tương ứng. Các khóa trùng sẽ được ghi đè; dữ liệu khác được giữ lại.</p>
-    <div class="buttons">
-      <input id="fileInput" type="file" accept=".json,application/json">
-      <button class="btn primary" id="importBtn">Import backup</button>
+  <section id="idb" hidden>
+    <div class="bar">
+      <button id="idbRef">Làm mới</button>
+      <button id="idbExpAll" class="pr">Xuất tất cả DB</button>
+      <button id="idbImp">Nhập file</button>
     </div>
-    <label style="display:flex;gap:9px;align-items:flex-start;font-size:13px;color:var(--muted);margin:12px 0">
-      <input type="checkbox" id="confirmImport">
-      Tôi đã mở game đích ít nhất một lần và hiểu rằng dữ liệu save trùng khóa có thể bị ghi đè.
-    </label>
-    <div id="importStatus" class="status">Chưa import.</div>
+    <div id="dbs"></div>
+    <div class="note">Nhiều game (Unity, Emscripten, Godot...) lưu save ở IndexedDB. Nếu xoá bị treo, hãy đóng các tab game đang mở rồi thử lại.</div>
   </section>
-
-  <section class="panel">
-    <h2>Quy trình chuyển PC ↔ mobile</h2>
-    <ol>
-      <li>Trên PC, mở game và lưu trong game như bình thường.</li>
-      <li>Mở Save Hub ở cùng domain, bấm <strong>Quét</strong>, rồi <strong>Export backup JSON</strong>.</li>
-      <li>Gửi file JSON sang mobile bằng cách riêng tư, chẳng hạn cáp USB hoặc dịch vụ lưu trữ cá nhân.</li>
-      <li>Trên mobile, mở đúng game và tạo/khởi tạo save nếu cần; sau đó mở Save Hub cùng domain.</li>
-      <li>Chọn file backup, tích xác nhận và bấm <strong>Import backup</strong>. Tải lại game rồi kiểm tra save.</li>
-    </ol>
-    <p class="warning">Khuyến nghị: export backup trên thiết bị đích trước khi import. Nếu game dùng cơ chế lưu riêng, plugin tùy chỉnh hoặc IndexedDB không tương thích, việc chuyển có thể không khôi phục được hoàn toàn.</p>
-  </section>
-  <div class="foot">Dữ liệu chỉ được xử lý trong trình duyệt; trang này không gửi backup lên máy chủ. GitHub Pages chỉ lưu mã nguồn trang, không lưu file backup của bạn.</div>
 </main>
+
+<dialog id="dlg">
+  <input type="text" id="dk" placeholder="Key">
+  <textarea id="dv" placeholder="Giá trị"></textarea>
+  <div class="row">
+    <button id="fmt">Format JSON</button>
+    <button id="dc">Huỷ</button>
+    <button id="ds" class="pr">Lưu</button>
+  </div>
+</dialog>
+
+<input type="file" id="file" accept=".json,application/json" hidden>
+<div id="toast"></div>
+
 <script>
-(() => {
-  "use strict";
-  const $ = id => document.getElementById(id);
-  let latestBackup = null;
-  let scanned = false;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmtSize=b=>b<1024?b+' B':b<1048576?(b/1024).toFixed(1)+' KB':(b/1048576).toFixed(2)+' MB';
+function toast(m,err){const t=$('#toast');t.textContent=m;t.className='show'+(err?' err':'');clearTimeout(toast.t);toast.t=setTimeout(()=>t.className='',2200)}
+function download(name,obj){
+  const b=new Blob([JSON.stringify(obj)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=name;a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+const stamp=()=>new Date().toISOString().slice(0,19).replace(/[:T]/g,'-');
+$('#origin').textContent=location.origin;
 
-  const setStatus = (id, message, type = "") => {
-    const el = $(id); el.textContent = message; el.className = "status" + (type ? " " + type : "");
-  };
-  const safeName = s => String(s || "rpg-save").replace(/[^a-z0-9._-]+/gi, "_").slice(0, 70) || "rpg-save";
-  const req = request => new Promise((resolve, reject) => {
-    request.onsuccess = () => resolve(request.result);
-    request.onerror = () => reject(request.error || new Error("IndexedDB request failed"));
-  });
-  const txDone = tx => new Promise((resolve, reject) => {
-    tx.oncomplete = resolve;
-    tx.onerror = () => reject(tx.error || new Error("IndexedDB transaction failed"));
-    tx.onabort = () => reject(tx.error || new Error("IndexedDB transaction aborted"));
-  });
+/* ---------- tabs ---------- */
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===t));
+  $('#ls').hidden=t.dataset.t!=='ls';$('#idb').hidden=t.dataset.t!=='idb';
+  if(t.dataset.t==='idb')loadDbs();
+});
 
-  async function scanStorage() {
-    setStatus("scanStatus", "Đang quét dữ liệu của origin hiện tại…");
-    $("scanBtn").disabled = true;
-    try {
-      const localStorageItems = [];
-      for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        if (key !== null) localStorageItems.push({key, value: localStorage.getItem(key)});
+/* ---------- localStorage ---------- */
+let group='',selected=new Set();
+const prefixOf=k=>{const m=k.match(/^([^_:.\-\/\s]{1,40})[_:.\-\/]/);return m?m[1]:'(khác)'};
+function lsEntries(){
+  const a=[];
+  for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);a.push([k,localStorage.getItem(k)])}
+  return a.sort((x,y)=>x[0].localeCompare(y[0]));
+}
+function renderLS(){
+  const all=lsEntries(),q=$('#q').value.toLowerCase();
+  const counts={};all.forEach(([k])=>{const p=prefixOf(k);counts[p]=(counts[p]||0)+1});
+  $('#chips').innerHTML=`<span class="chip ${group===''?'on':''}" data-g="">Tất cả (${all.length})</span>`+
+    Object.keys(counts).sort().map(p=>`<span class="chip ${group===p?'on':''}" data-g="${esc(p)}">${esc(p)} (${counts[p]})</span>`).join('');
+  $('#chips').querySelectorAll('.chip').forEach(c=>c.onclick=()=>{group=c.dataset.g;renderLS()});
+  const list=all.filter(([k,v])=>(!group||prefixOf(k)===group)&&(!q||k.toLowerCase().includes(q)||v.toLowerCase().includes(q)));
+  $('#rows').innerHTML=list.length?list.map(([k,v])=>`<tr>
+    <td><input type="checkbox" class="cb" data-k="${esc(k)}" ${selected.has(k)?'checked':''}></td>
+    <td class="k">${esc(k)}</td><td class="v" title="${esc(v.slice(0,300))}">${esc(v.slice(0,120))}</td>
+    <td class="n">${fmtSize((k.length+v.length)*2)}</td>
+    <td class="acts"><button data-a="edit" data-k="${esc(k)}">Sửa</button> <button data-a="del" class="dg" data-k="${esc(k)}">Xoá</button></td></tr>`).join('')
+    :`<tr><td colspan="5" class="empty">Không có dữ liệu</td></tr>`;
+  const total=all.reduce((s,[k,v])=>s+(k.length+v.length)*2,0);
+  $('#sum').textContent=`${list.length}/${all.length} key hiển thị • tổng ~${fmtSize(total)} (giới hạn trình duyệt thường ~5–10 MB)`;
+  $('#rows').querySelectorAll('.cb').forEach(c=>c.onchange=()=>{c.checked?selected.add(c.dataset.k):selected.delete(c.dataset.k)});
+  $('#rows').querySelectorAll('button').forEach(b=>b.onclick=()=>{
+    const k=b.dataset.k;
+    if(b.dataset.a==='edit')openDlg(k,localStorage.getItem(k));
+    else if(confirm(`Xoá "${k}"?`)){localStorage.removeItem(k);selected.delete(k);renderLS()}
+  });
+  $('#all').checked=false;
+}
+$('#all').onchange=e=>{document.querySelectorAll('.cb').forEach(c=>{c.checked=e.target.checked;e.target.checked?selected.add(c.dataset.k):selected.delete(c.dataset.k)})};
+$('#q').oninput=renderLS;
+function openDlg(k,v){$('#dk').value=k||'';$('#dk').dataset.old=k||'';$('#dv').value=v||'';$('#dlg').showModal()}
+$('#add').onclick=()=>openDlg('','');
+$('#dc').onclick=()=>$('#dlg').close();
+$('#fmt').onclick=()=>{try{$('#dv').value=JSON.stringify(JSON.parse($('#dv').value),null,2)}catch{toast('Không phải JSON hợp lệ',1)}};
+$('#ds').onclick=()=>{
+  const k=$('#dk').value,old=$('#dk').dataset.old;
+  if(!k)return toast('Cần nhập key',1);
+  try{if(old&&old!==k)localStorage.removeItem(old);localStorage.setItem(k,$('#dv').value)}catch(e){return toast('Lỗi: '+e.message,1)}
+  $('#dlg').close();renderLS();toast('Đã lưu');
+};
+$('#expAll').onclick=()=>{
+  const o={};lsEntries().forEach(([k,v])=>o[k]=v);
+  download(`save-localStorage-${stamp()}.json`,{type:'save-manager',version:1,localStorage:o});
+};
+$('#expSel').onclick=()=>{
+  if(!selected.size)return toast('Chưa chọn key nào',1);
+  const o={};selected.forEach(k=>{const v=localStorage.getItem(k);if(v!==null)o[k]=v});
+  download(`save-selected-${stamp()}.json`,{type:'save-manager',version:1,localStorage:o});
+};
+$('#delSel').onclick=()=>{
+  if(!selected.size)return toast('Chưa chọn key nào',1);
+  if(!confirm(`Xoá ${selected.size} key đã chọn?`))return;
+  selected.forEach(k=>localStorage.removeItem(k));selected.clear();renderLS();
+};
+$('#imp').onclick=()=>$('#file').click();
+$('#idbImp').onclick=()=>$('#file').click();
+$('#file').onchange=async e=>{
+  const f=e.target.files[0];e.target.value='';if(!f)return;
+  try{
+    const d=JSON.parse(await f.text());
+    if(d.type!=='save-manager')throw new Error('Không phải file của Save Manager');
+    let msg=[];
+    if(d.localStorage){
+      const n=Object.keys(d.localStorage).length;
+      if(confirm(`Nhập ${n} key localStorage? Key trùng sẽ bị ghi đè.`)){
+        for(const k in d.localStorage)localStorage.setItem(k,d.localStorage[k]);msg.push(n+' key localStorage');
       }
+    }
+    if(d.indexedDB&&d.indexedDB.length){
+      if(confirm(`Nhập ${d.indexedDB.length} database IndexedDB? Bản ghi trùng key sẽ bị ghi đè.`)){
+        for(const db of d.indexedDB)await importDb(db);msg.push(d.indexedDB.length+' IndexedDB');
+      }
+    }
+    renderLS();loadDbs();toast(msg.length?'Đã nhập: '+msg.join(', '):'Không nhập gì');
+  }catch(err){toast('Lỗi: '+err.message,1)}
+};
 
-      const databases = [];
-      let unsupported = false;
-      if (indexedDB.databases) {
-        const dbInfos = await indexedDB.databases();
-        for (const info of dbInfos) {
-          if (!info.name) continue;
-          let db;
-          try {
-            db = await new Promise((resolve, reject) => {
-              const openReq = indexedDB.open(info.name);
-              openReq.onsuccess = () => resolve(openReq.result);
-              openReq.onerror = () => reject(openReq.error);
-              openReq.onupgradeneeded = () => {
-                openReq.transaction.abort();
-                reject(new Error("Unexpected database creation"));
-              };
-            });
-            const stores = [];
-            for (const storeName of Array.from(db.objectStoreNames)) {
-              const tx = db.transaction(storeName, "readonly");
-              const store = tx.objectStore(storeName);
-              const keysPromise = req(store.getAllKeys());
-              const valuesPromise = req(store.getAll());
-              const done = txDone(tx);
-              await done;
-              const keys = await keysPromise;
-              const values = await valuesPromise;
-              stores.push({
-                name: storeName,
-                keyPath: store.keyPath,
-                autoIncrement: store.autoIncrement,
-                records: keys.map((key, index) => ({key, value: values[index]}))
-              });
-            }
-            databases.push({name: db.name, version: db.version, stores});
-          } catch (error) {
-            console.warn("Could not read IndexedDB", info.name, error);
-          } finally {
-            if (db) db.close();
-          }
+/* ---------- IndexedDB serialize ---------- */
+const b64=u8=>{let s='';for(let i=0;i<u8.length;i+=0x8000)s+=String.fromCharCode.apply(null,u8.subarray(i,i+0x8000));return btoa(s)};
+const unb64=s=>{const b=atob(s),u=new Uint8Array(b.length);for(let i=0;i<b.length;i++)u[i]=b.charCodeAt(i);return u};
+const TA={Int8Array,Uint8Array,Uint8ClampedArray,Int16Array,Uint16Array,Int32Array,Uint32Array,Float32Array,Float64Array,BigInt64Array,BigUint64Array};
+function enc(v){
+  if(v===null||typeof v!=='object')return typeof v==='bigint'?{__t:'bigint',v:String(v)}:v===undefined?{__t:'undef'}:(typeof v==='number'&&!isFinite(v))?{__t:'num',v:String(v)}:v;
+  if(v instanceof Date)return{__t:'date',v:v.getTime()};
+  if(v instanceof ArrayBuffer)return{__t:'ab',v:b64(new Uint8Array(v))};
+  if(ArrayBuffer.isView(v))return{__t:'ta',c:v.constructor.name,v:b64(new Uint8Array(v.buffer,v.byteOffset,v.byteLength))};
+  if(v instanceof Blob)throw new Error('Blob chưa được hỗ trợ');
+  if(Array.isArray(v))return v.map(enc);
+  const o={};for(const k in v)o[k]=enc(v[k]);
+  return(('__t' in o))?{__t:'esc',v:o}:o;
+}
+function dec(v){
+  if(v===null||typeof v!=='object')return v;
+  if(Array.isArray(v))return v.map(dec);
+  switch(v.__t){
+    case'date':return new Date(v.v);
+    case'bigint':return BigInt(v.v);
+    case'undef':return undefined;
+    case'num':return Number(v.v);
+    case'ab':return unb64(v.v).buffer;
+    case'ta':{const u=unb64(v.v);return new TA[v.c](u.buffer,0,u.byteLength/TA[v.c].BYTES_PER_ELEMENT)}
+    case'esc':v=v.v;
+  }
+  const o={};for(const k in v)o[k]=dec(v[k]);return o;
+}
+const req=r=>new Promise((res,rej)=>{r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)});
+const openDb=(name,ver,up)=>new Promise((res,rej)=>{
+  const r=ver?indexedDB.open(name,ver):indexedDB.open(name);
+  if(up)r.onupgradeneeded=()=>up(r.result);
+  r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error);r.onblocked=()=>rej(new Error('Bị chặn: hãy đóng các tab game đang mở'));
+});
+
+async function dbInfo(name){
+  const db=await openDb(name);
+  try{
+    const stores=[...db.objectStoreNames];
+    const info=[];
+    if(stores.length){
+      const tx=db.transaction(stores,'readonly');
+      for(const s of stores){info.push({name:s,count:await req(tx.objectStore(s).count())})}
+    }
+    return{name,version:db.version,stores:info};
+  }finally{db.close()}
+}
+async function exportDb(name){
+  const db=await openDb(name);
+  try{
+    const out={name,version:db.version,stores:[]};
+    const names=[...db.objectStoreNames];
+    if(!names.length)return out;
+    const tx=db.transaction(names,'readonly');
+    for(const sn of names){
+      const st=tx.objectStore(sn);
+      const meta={name:sn,keyPath:st.keyPath,autoIncrement:st.autoIncrement,
+        indexes:[...st.indexNames].map(i=>{const x=st.index(i);return{name:i,keyPath:x.keyPath,unique:x.unique,multiEntry:x.multiEntry}}),records:[]};
+      await new Promise((res,rej)=>{
+        const c=st.openCursor();
+        c.onsuccess=()=>{const cur=c.result;if(!cur)return res();
+          try{meta.records.push({k:enc(cur.key),v:enc(cur.value)})}catch(e){return rej(e)}
+          cur.continue()};
+        c.onerror=()=>rej(c.error);
+      });
+      out.stores.push(meta);
+    }
+    return out;
+  }finally{db.close()}
+}
+async function importDb(d){
+  let db=await openDb(d.name);
+  const missing=d.stores.filter(s=>!db.objectStoreNames.contains(s.name));
+  if(missing.length){
+    const v=db.version+1;db.close();
+    db=await openDb(d.name,v,db2=>{
+      for(const s of missing){
+        const st=db2.createObjectStore(s.name,s.keyPath!=null?{keyPath:s.keyPath,autoIncrement:s.autoIncrement}:{autoIncrement:s.autoIncrement});
+        for(const i of s.indexes||[])st.createIndex(i.name,i.keyPath,{unique:i.unique,multiEntry:i.multiEntry});
+      }
+    });
+  }
+  try{
+    if(!d.stores.length)return;
+    const tx=db.transaction(d.stores.map(s=>s.name),'readwrite');
+    const done=new Promise((res,rej)=>{tx.oncomplete=res;tx.onerror=()=>rej(tx.error);tx.onabort=()=>rej(tx.error)});
+    for(const s of d.stores){
+      const st=tx.objectStore(s.name);
+      for(const r of s.records){
+        if(st.keyPath!=null)st.put(dec(r.v));else st.put(dec(r.v),dec(r.k));
+      }
+    }
+    await done;
+  }finally{db.close()}
+}
+
+async function loadDbs(){
+  const box=$('#dbs');
+  if(!indexedDB.databases){box.innerHTML='<div class="empty">Trình duyệt này không hỗ trợ liệt kê IndexedDB (Firefox cũ). Dùng Chrome/Edge/Safari mới.</div>';return}
+  box.innerHTML='<div class="empty">Đang tải...</div>';
+  try{
+    const list=(await indexedDB.databases()).filter(x=>x.name);
+    if(!list.length){box.innerHTML='<div class="empty">Chưa có IndexedDB nào</div>';return}
+    const infos=await Promise.all(list.map(x=>dbInfo(x.name).catch(e=>({name:x.name,err:e.message}))));
+    box.innerHTML=infos.map((d,i)=>`<div class="card"><h3>${esc(d.name)}</h3>
+      ${d.err?`<div class="st">Lỗi: ${esc(d.err)}</div>`:`<div class="st">version ${d.version} • ${d.stores.length} store</div>
+      ${d.stores.map(s=>`<div class="st">• ${esc(s.name)}: ${s.count} bản ghi</div>`).join('')}`}
+      <div class="bar" style="margin:8px 0 0"><button data-a="exp" data-i="${i}">Xuất</button><button class="dg" data-a="del" data-i="${i}">Xoá DB</button></div></div>`).join('');
+    box.querySelectorAll('button').forEach(b=>b.onclick=async()=>{
+      const name=infos[b.dataset.i].name;
+      try{
+        if(b.dataset.a==='exp'){download(`save-idb-${name.replace(/[^\w.-]+/g,'_')}-${stamp()}.json`,{type:'save-manager',version:1,indexedDB:[await exportDb(name)]});toast('Đã xuất')}
+        else if(confirm(`Xoá toàn bộ database "${name}"?`)){
+          await new Promise((res,rej)=>{const r=indexedDB.deleteDatabase(name);r.onsuccess=res;r.onerror=()=>rej(r.error);r.onblocked=()=>rej(new Error('Bị chặn: đóng các tab game đang mở'))});
+          toast('Đã xoá');loadDbs();
         }
-      } else {
-        unsupported = true;
-      }
+      }catch(e){toast('Lỗi: '+e.message,1)}
+    });
+    box._infos=infos;
+  }catch(e){box.innerHTML=`<div class="empty">Lỗi: ${esc(e.message)}</div>`}
+}
+$('#idbRef').onclick=loadDbs;
+$('#idbExpAll').onclick=async()=>{
+  try{
+    const list=(await indexedDB.databases()).filter(x=>x.name);
+    if(!list.length)return toast('Không có DB nào',1);
+    const arr=[];for(const x of list)arr.push(await exportDb(x.name));
+    download(`save-idb-all-${stamp()}.json`,{type:'save-manager',version:1,indexedDB:arr});toast('Đã xuất');
+  }catch(e){toast('Lỗi: '+e.message,1)}
+};
 
-      latestBackup = {
-        format: "rpg-save-hub-browser-backup",
-        version: 1,
-        origin: location.origin,
-        exportedAt: new Date().toISOString(),
-        localStorage: localStorageItems,
-        indexedDB: databases
-      };
-      const recordCount = databases.reduce((n, db) => n + db.stores.reduce((m, store) => m + store.records.length, 0), 0);
-      $("localCount").textContent = localStorageItems.length;
-      $("dbCount").textContent = databases.length;
-      $("recordCount").textContent = recordCount;
-      $("exportBtn").disabled = false;
-      scanned = true;
-
-      const list = $("dbList"); list.replaceChildren();
-      if (!databases.length) {
-        const div = document.createElement("div"); div.className = "db"; div.textContent = unsupported ? "Trình duyệt này chưa hỗ trợ liệt kê IndexedDB tự động." : "Không tìm thấy database IndexedDB.";
-        list.append(div);
-      }
-      for (const db of databases) {
-        const div = document.createElement("div"); div.className = "db";
-        const strong = document.createElement("strong"); strong.textContent = db.name;
-        const small = document.createElement("small");
-        small.textContent = `Version ${db.version} · ${db.stores.length} object store · ${db.stores.reduce((n,s)=>n+s.records.length,0)} bản ghi`;
-        div.append(strong, small); list.append(div);
-      }
-      setStatus("scanStatus", `Quét xong ${location.origin}: ${localStorageItems.length} mục localStorage, ${databases.length} database, ${recordCount} bản ghi IndexedDB.`, "good");
-    } catch (error) {
-      latestBackup = null; $("exportBtn").disabled = true;
-      setStatus("scanStatus", "Quét thất bại: " + (error.message || error), "bad");
-    } finally {
-      $("scanBtn").disabled = false;
-    }
-  }
-
-  function exportBackup() {
-    if (!latestBackup || !scanned) {
-      setStatus("scanStatus", "Hãy quét dữ liệu trước khi export.", "bad"); return;
-    }
-    const blob = new Blob([JSON.stringify(latestBackup, null, 2)], {type:"application/json;charset=utf-8"});
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `rpg-browser-backup-${safeName(location.hostname)}-${new Date().toISOString().replace(/[:.]/g,"-")}.json`;
-    document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 1500);
-    setStatus("scanStatus", "Đã tạo file backup JSON. Hãy giữ file này riêng tư.", "good");
-  }
-
-  async function importBackup() {
-    const file = $("fileInput").files[0];
-    if (!file) { setStatus("importStatus", "Hãy chọn file backup JSON trước.", "bad"); return; }
-    if (!$("confirmImport").checked) { setStatus("importStatus", "Hãy tích ô xác nhận trước khi import.", "bad"); return; }
-    $("importBtn").disabled = true;
-    try {
-      const backup = JSON.parse(await file.text());
-      if (backup?.format !== "rpg-save-hub-browser-backup" || backup?.version !== 1 ||
-          !Array.isArray(backup.localStorage) || !Array.isArray(backup.indexedDB)) {
-        throw new Error("File không đúng định dạng backup của Save Hub.");
-      }
-      if (!confirm(`Import backup từ ${backup.origin || "origin không rõ"} vào ${location.origin}?\n\nKhóa localStorage trùng tên sẽ bị ghi đè. Hãy chắc chắn bạn muốn tiếp tục.`)) return;
-
-      let localCount = 0, recordCount = 0, skipped = 0;
-      for (const item of backup.localStorage) {
-        if (!item || typeof item.key !== "string" || (item.value !== null && typeof item.value !== "string")) { skipped++; continue; }
-        localStorage.setItem(item.key, item.value);
-        localCount++;
-      }
-
-      const dbInfos = indexedDB.databases ? await indexedDB.databases() : [];
-      const available = new Set(dbInfos.map(db => db.name));
-      for (const savedDb of backup.indexedDB) {
-        if (!savedDb || !available.has(savedDb.name)) { skipped++; continue; }
-        let db;
-        try {
-          db = await new Promise((resolve, reject) => {
-            const r = indexedDB.open(savedDb.name);
-            r.onsuccess = () => resolve(r.result);
-            r.onerror = () => reject(r.error);
-          });
-          for (const savedStore of (savedDb.stores || [])) {
-            if (!db.objectStoreNames.contains(savedStore.name)) { skipped++; continue; }
-            for (const record of (savedStore.records || [])) {
-              try {
-                const tx = db.transaction(savedStore.name, "readwrite");
-                const store = tx.objectStore(savedStore.name);
-                if (store.keyPath !== null) {
-                  store.put(record.value);
-                } else {
-                  store.put(record.value, record.key);
-                }
-                await txDone(tx);
-                recordCount++;
-              } catch (error) {
-                skipped++; console.warn("Skipped IndexedDB record", savedStore.name, error);
-              }
-            }
-          }
-        } finally { if (db) db.close(); }
-      }
-      setStatus("importStatus", `Import hoàn tất: ${localCount} mục localStorage, ${recordCount} bản ghi IndexedDB. Bỏ qua ${skipped} mục/database không tương thích hoặc chưa được game khởi tạo. Tải lại game để kiểm tra.`, "good");
-    } catch (error) {
-      setStatus("importStatus", "Import thất bại: " + (error.message || error), "bad");
-    } finally {
-      $("importBtn").disabled = false;
-    }
-  }
-
-  $("scanBtn").addEventListener("click", scanStorage);
-  $("exportBtn").addEventListener("click", exportBackup);
-  $("importBtn").addEventListener("click", importBackup);
-})();
+renderLS();
 </script>
 </body>
 </html>
