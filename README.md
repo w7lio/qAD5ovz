@@ -14,15 +14,15 @@ Mezzo-Pumpkin
 
 > https://w7lio.github.io/qAD5ovz/index.html
 
-**🍎 Ios cần xem ở chế độ máy tính để nghe được âm thanh**
---
+### **🍎 Ios cần xem ở chế độ máy tính để nghe được âm thanh**
+
 
 ### 1.Wget + Cookie
 ```sh
 wget --header="Cookie: accountToken=VALUE" \
 --content-disposition "URL"
 ```
-> [!TIP]
+> [!IMPORTANT]
 > Ưu tiên file APK tải ở Vexfile, Pixel, Yandex
 > (Terabox)
 > https://www.teraboxdownloader.pro/
@@ -38,35 +38,43 @@ sudo apt update
 sudo apt install unrar
 ```
 > [!IMPORTANT]
-> `grep -rInF --binary-files=without-match '=====' .`   
-> Prompt:  
+> VIỆT HOÁ
+
+### Tìm Hội Thoại
+```
+grep -rInF --binary-files=without-match '=====' .   
+```
+### Xác Định Cấu Trúc
 ```
 Cấu Trúc File Này
 ```
-
+### Tối Ưu Tiêu Thụ Token Dịch
 CLAUDE SONNET 5.5 MEDIUM
 ```
 Tạo cho tôi một web có chức năng
 Tách hết phần cần dịch ra, xong tạo ra 1 file chỉ có text cần dịch 
 chỉ cần paste file đó bản đã dịch lại web thì nó sẽ xác nhập phần cần dịch vào code
 ```
-
+### Prompt Dịch
 VENICE or CLAUDE SONNET 5.5 (SLOW)
 ```
-Dịch cho tôi hội thoại game [] 18+ này
-Hãy Việt hóa đoạn tiếng Nhật sang tiếng Việt tự nhiên, lời thoại thật dâm dục như con cặc, lồn, địt
-Ưu tiên đúng nghĩa và hàm ý theo ngữ cảnh, không dịch máy móc từng chữ. 
-
-Giữ nhất quán cách xưng hô, tính cách nhân vật và sắc thái kính ngữ, mỉa mai. 
+Hãy Việt hóa hội thoại game [] 18+ này từ tiếng [] này sang tiếng Việt cho tôi 
+dịch thật tự nhiên, lời thoại thật dâm dục như con cặc, lồn, địt
 Đầu ra code block txt
 ```
 
-> [!TIP] 
-> Preview Web
-> ```find . -name "*.html"```  
-> ```python3 -m http.server 8000```  
+> [!NOTE] 
+> Test Game
+> 
+```
+find . -name "*.html"
+```  
+```
+python3 -m http.server 8000
+```  
 
-> RenPy  
+> [!IMPORTANT] 
+> RENPY PORT WEB  
 ```sh
 cd ~
 wget https://www.renpy.org/dl/8.5.3/renpy-8.5.3-sdk.tar.bz2
@@ -82,7 +90,7 @@ rm renpy-8.5.3-web.zip
 ```
 
 > [!WARNING]
-> Xoá File nặng và không cần
+> Xoá/Tìm File nặng
 ```sh
 rm -f Game.exe notification_helper.exe debug.log "★Readme.txt" \
   nw.dll nw_elf.dll node.dll icudtl.dat \
@@ -99,25 +107,9 @@ rm -f Game.exe notification_helper.exe debug.log "★Readme.txt" \
 git rm --cached "PATH"
 ```
 
-> **Push Folder**
+**Push Folder**
 ```
 git add abcxyz/
 git commit -m "Upload Folder"
 git push --force
-```
-
-> **Rename** 
-```
-git mv nameOld nameNew
-git commit -m "Rename Folder"
-git push --force
-```
-
-> [!TIP] 
-> Sync Readme
-`lấy thông tin phiên`
-*khôi phục về readme mặc định repo*
-```
-git fetch origin
-git restore --source=origin/main -- README.md 
 ```
